@@ -42,7 +42,6 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
      ```bash
      uvicorn main:app --reload
      ```
-   -Ustawienie własnego modelu ai do wykrywania roznych materialow(nie dam mojego bo github nie pozwala na tak duze pliki a nie jest on i tak nie omylny i przez brak czasu slabo wyszkolony) nazwac go model.pth
 
 2. **Programowanie ESP32:**
    - Skonfiguruj Arduino IDE z dodatkowymi bibliotekami:
@@ -51,6 +50,7 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
    - Załaduj kod na urządzenie.
 
 3. **Testowanie prototypu:**
+   - Ustaw własny model ai do wykrywania roznych materialow(nie dam mojego bo github nie pozwala na tak duze pliki a nie jest on i tak nie omylny i przez brak czasu slabo wyszkolony) nazwac go model.pth
    - Połącz ESP32 z serwerem za pomocą sieci WiFi.
    - Użyj interfejsu WWW do rejestracji kosza i monitorowania danych.
 
