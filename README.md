@@ -8,19 +8,18 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
 ## Funkcjonalności
 - **Automatyczna segregacja odpadów**: Urządzenie samodzielnie identyfikuje typ odpadu i klasyfikuje go do odpowiedniego pojemnika.
 - **Integracja z platformą internetową**: Użytkownik rejestruje kosz za pomocą unikalnego ID i ma dostęp do raportów o segregacji.
-- **Plany rozwojowe**: Dodanie czujników zapełnienia, większe urządzenia dla instytucji publicznych oraz analiza danych dla firm.
-
 ---
 
 ## Wymagania techniczne
+
 ### Sprzęt:
-- Moduł ESP32 z kamerą (ESP-Camera).
+- Moduł **ESP32** z kamerą (ESP-Camera).
 - Silniki krokowe (do sterowania pojemnikami).
 - Podzespoły do budowy prototypu kosza.
 
 ### Oprogramowanie:
-- Python 3.8+.
-- Arduino IDE (dla ESP32).
+- **Python 3.8+**
+- **Arduino IDE** (dla ESP32).
 - Biblioteki Python:
   - `fastapi` (MIT License)
   - `torch` i `torchvision` (BSD 3-Clause License)
@@ -33,6 +32,7 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
 ---
 
 ## Instalacja i uruchomienie
+
 1. **Uruchomienie części serwerowej:**
    - Zainstaluj wymagane biblioteki Python:
      ```bash
@@ -50,13 +50,33 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
    - Załaduj kod na urządzenie.
 
 3. **Testowanie prototypu:**
-   - Ustaw własny model ai do wykrywania roznych materialow(nie dam mojego bo github nie pozwala na tak duze pliki a nie jest on i tak nie omylny i przez brak czasu slabo wyszkolony) nazwac go model.pth
+   - Ustaw własny model AI do wykrywania różnych materiałów (np. `model.pth`), nie mogę udostępnic mojego ponieważ github nie pozwala na tak duże pliki (i tak nie jest on nie omylny i przez brak czasu niedouczony).
    - Połącz ESP32 z serwerem za pomocą sieci WiFi.
    - Użyj interfejsu WWW do rejestracji kosza i monitorowania danych.
+
+4. **Konfiguracja bazy danych (XAMPP):**
+   - W celu przechowywania danych użytkowników i raportów o segregacji, należy skonfigurować bazę danych MySQL za pomocą XAMPP.
+   - Skorzystaj z **phpMyAdmin** do stworzenia bazy danych i odpowiednich tabel:
+     1. Utwórz bazę danych, np. `kosz`.
+     2. Utwórz tabelę dla użytkowników, np. `uzy`, z kolumnami:
+        - `id` 
+        - `nick`
+        - `haslo`
+        - `pl`
+        - `szkl`
+        - `miesz` 
+        - `pap`
+        - `pl1`
+        - `szkl1`
+        - `miesz1`
+        - `pap1`
+
+   - Takie rozłożenie powinno sprawić że kod będzie w pełni działać a urządzenie będzie mogło komunikować się ze stroną.
 
 ---
 
 ## Licencje i wykorzystane zasoby
+
 Projekt korzysta z następujących bibliotek i zasobów:
 
 1. **FastAPI**
@@ -86,8 +106,8 @@ Projekt korzysta z następujących bibliotek i zasobów:
 ---
 
 ## Uwagi dotyczące licencji
-- Projekt korzysta z powyższych bibliotek w ich **oryginalnej, niezmodyfikowanej formie**.  
-- Jeśli dystrybuujesz swój projekt, uwzględnij licencje wymienionych bibliotek w dokumentacji.
+- Projekt korzysta z powyższych bibliotek w ich **oryginalnej, niezmodyfikowanej formie**.
+- Jeśli dystrybuujesz swój projekt, pamiętaj, aby uwzględnić licencje wymienionych bibliotek w dokumentacji.
 
 ---
 
@@ -95,3 +115,8 @@ Projekt korzysta z następujących bibliotek i zasobów:
 Projekt wykonany przez Tomasza Filipczuka.  
 Jeśli masz pytania lub sugestie, skontaktuj się: tfilipczuk4@gmail.com.
 
+---
+
+### Dodatkowe informacje
+- Wszelkie pytania dotyczące instalacji i konfiguracji projektu proszę kierować na powyższy adres email.
+---
