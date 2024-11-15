@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess App - Register</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="auth-page">
+    <div class="container">
+        <h2>Create Your Free Account</h2>
+
+        <form id="registerForm" action="/register/" method="post" onsubmit="return validateForm()">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="password1">Repeat Password</label>
+            <input type="password" id="password1" name="password1" placeholder="Repeat password" required>
+
+            <label for="deviceId">Device ID</label>
+            <input type="text" id="deviceId" name="deviceId" placeholder="Enter your Device ID" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <a href="/login/">Already have an account? Log in here</a>
+
+        <p id="errorMessage" class="error" style="display: block;">{{ error }}</p>
+
+        <label>
+            <input type="checkbox" onclick="togglePasswords()"> Show Passwords
+        </label>
+
+        <label>
+            <input type="checkbox" id="acceptCookies" name="acceptCookies">
+            I accept cookies
+        </label>
+
+        <script>
+        function validateForm() {
+            let error = "";
+
+            const password = document.getElementById("password").value;
+            const password1 = document.getElementById("password1").value;
+
+            const deviceId = document.getElementById("deviceId").value;
+
+            if (password !== password1) {
+                error = "Passwords are not the same!";
+            }
+
+
+
+            const acceptCookies = document.getElementById("acceptCookies").checked;
+            if (!acceptCookies) {
+                error = "You must accept cookies to register!";
+            }
+
+            const errorMessage = document.getElementById("errorMessage");
+
+            if (error) {
+                errorMessage.innerText = error;
+                errorMessage.style.display = "block";
+                return false;
+            }
+
+            errorMessage.style.display = "none";
+            return true;
+        }
+
+        function togglePasswords() {
+            const passwordField = document.getElementById("password");
+            const passwordField1 = document.getElementById("password1");
+
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                passwordField1.type = "text";
+            } else {
+                passwordField.type = "password";
+                passwordField1.type = "password";
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>

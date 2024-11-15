@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/styles3.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ data.account }}</h1>
+        <h2>Device ID: {{ data.device_id }}</h2>
+
+        <div class="categories">
+        {% for category in data.categories %}
+        <div class="category">
+            <h3>{{ category.name }}</h3>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" style="width: {{ category.progress }}%;">{{ category.progress }}%</div>
+            </div>
+            <p>Wyrzuciłeś już: {{ category.count }} sztuk</p>
+        </div>
+        {% endfor %}
+    </div>
+        <div class="announcements">
+        <h3>Ogłoszenia</h3>
+        {% for announcement in data.announcements %}
+        <p>{{ announcement }}</p>
+        {% endfor %}
+    </div>
+    </div>
+
+
+</body>
+</html>
