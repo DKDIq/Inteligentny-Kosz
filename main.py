@@ -99,7 +99,9 @@ def dashboard(request:Request,response: Response):
     cookie=check_cookie(request,"auth_token")
     conn = get_db_connection()
     if conn is None:
-        return RedirectResponse(url="/register/", status_code=302)
+        response=RedirectResponse(url="/register/", status_code=302)
+        response.delete_cookie(key="auth_token")
+        return response
     print("SDADADAD")
 
     with conn.cursor() as cursor:
