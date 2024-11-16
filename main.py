@@ -99,8 +99,7 @@ def dashboard(request:Request,response: Response):
     cookie=check_cookie(request,"auth_token")
     conn = get_db_connection()
     if conn is None:
-        error_message = "We having trouble with servers please try again later"
-        return templates.TemplateResponse("register.html", {"request": request, "error": error_message})
+        return RedirectResponse(url="/register/", status_code=302)
     print("SDADADAD")
 
     with conn.cursor() as cursor:
