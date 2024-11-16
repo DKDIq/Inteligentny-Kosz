@@ -1,4 +1,6 @@
 # Inteligentny Kosz na Śmieci
+## NAGRANIE DZIAŁANIA URZADZENIA I WYTLUMACZENIE KODU PROSZE OBEJRZEC PRZED OCENA: 
+https://drive.google.com/file/d/1gpm4vOQkSO0xb6vGZbL6EfsVQdOOYmZC/view?usp=sharing
 
 ## Opis projektu
 NAGRANIE DZIALANIA URZADZENIA(POLECAM OBEJRZEC PRZED OCENA): https://drive.google.com/file/d/1gpm4vOQkSO0xb6vGZbL6EfsVQdOOYmZC/view?usp=sharing
