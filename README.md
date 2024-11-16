@@ -1,6 +1,7 @@
 # Inteligentny Kosz na Śmieci
 
 ## Opis projektu
+NAGRANIE DZIALANIA URZADZENIA(POLECAM OBEJRZEC PRZED OCENA): https://drive.google.com/file/d/1gpm4vOQkSO0xb6vGZbL6EfsVQdOOYmZC/view?usp=sharing
 Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji odpadów i pozwala użytkownikom monitorować decyzje kosza za pomocą platformy internetowej. Wersja prototypowa oferuje podstawowe funkcjonalności, a kolejne iteracje będą wzbogacone o zaawansowane czujniki, analizę danych oraz większe urządzenia przeznaczone dla przestrzeni publicznych.
 
 ---
