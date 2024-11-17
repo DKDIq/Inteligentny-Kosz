@@ -103,7 +103,7 @@ Projekt korzysta z następujących bibliotek i zasobów:
    - Źródło: [https://github.com/espressif/esp32-camera](https://github.com/espressif/esp32-camera)
 
 6. **WiFi (Urządzenie)**
-   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/WIFI(arduino).txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt)
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/WIFI(arduino).txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/WIFI(arduino).txt)
    - Dokumentacja: [https://www.arduino.cc/en/Reference/WiFi](https://www.arduino.cc/en/Reference/WiFi)
 7. **Stepper (Urządzenie)**
    - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt)
