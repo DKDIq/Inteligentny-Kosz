@@ -24,13 +24,13 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
 - **Python 3.8+**
 - **Arduino IDE** (dla ESP32).
 - Biblioteki Python:
-  - `fastapi` (MIT License)
-  - `torch` i `torchvision` (BSD 3-Clause License)
-  - `pillow` (HPND License)
-  - `pymysql` (MIT License)
+  - `fastapi` 
+  - `torch` i `torchvision` 
+  - `pillow` 
+  - `pymysql` 
 - Arduino/ESP biblioteki:
-  - `WiFi` (LGPL License)
-  - `ESP-Camera` (LGPL License)
+  - `WiFi` 
+  - `ESP-Camera` 
 
 ---
 
@@ -83,28 +83,31 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
 Projekt korzysta z następujących bibliotek i zasobów:
 
 1. **FastAPI**
-   - Licencja: MIT
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/fastapi_license.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/fastapi_license.txt)
    - Repozytorium: [https://github.com/tiangolo/fastapi](https://github.com/tiangolo/fastapi)
 
 2. **PyTorch**
-   - Licencja: BSD 3-Clause
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/pytorch_license.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/pytorch_license.txt)
    - Strona główna: [https://pytorch.org](https://pytorch.org)
 
 3. **Pillow**
-   - Licencja: HPND
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/Pillow_license.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/Pillow_license.txt)
    - Repozytorium: [https://github.com/python-pillow/Pillow](https://github.com/python-pillow/Pillow)
 
 4. **PyMySQL**
-   - Licencja: MIT
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/PyMySQL_license.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/PyMySQL_license.txt)
    - Repozytorium: [https://github.com/PyMySQL/PyMySQL](https://github.com/PyMySQL/PyMySQL)
 
-5. **ESP-Camera (Arduino/ESP)**
-   - Licencja: LGPL
+5. **ESP-Camera (Urządzenie)**
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/esp_camera.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/esp_camera.txt)
    - Źródło: [https://github.com/espressif/esp32-camera](https://github.com/espressif/esp32-camera)
 
-6. **WiFi (Arduino/ESP)**
-   - Licencja: LGPL
+6. **WiFi (Urządzenie)**
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/WIFI(arduino).txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt)
    - Dokumentacja: [https://www.arduino.cc/en/Reference/WiFi](https://www.arduino.cc/en/Reference/WiFi)
+7. **Stepper (Urządzenie)**
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt)
+   - Dokumentacja: [https://github.com/arduino-libraries/Stepper](https://github.com/arduino-libraries/Stepper)
 
 ---
 
