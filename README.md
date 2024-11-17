@@ -62,10 +62,10 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
    - Skorzystaj z **phpMyAdmin** do stworzenia bazy danych i odpowiednich tabel:
      1. Utwórz bazę danych, np. `kosz`.
      2. Utwórz tabelę dla użytkowników uzywajac:
-        ```bash
+     -----------------------------------------------------------------------------
      CREATE TABLE `kosz`.`uzy` (`id` INT NOT NULL , `nick` TEXT NOT NULL , `haslo` TEXT NOT NULL , `cookie` TEXT NOT NULL , `pl` INT NOT NULL DEFAULT '0' , `szkl` INT NOT NULL DEFAULT '0' , `miesz` INT NOT NULL DEFAULT '0' , `pap` INT NOT NULL DEFAULT '0' , `pl1` INT NOT NULL DEFAULT '0' , `szkl1` INT NOT NULL DEFAULT '0' , `miesz1` INT NOT NULL DEFAULT '0' , `pap1` INT NOT NULL DEFAULT '0' ) ENGINE = InnoDB;
-     ```
-     3. Dodaj uprawnienia w bazie (jak na nagraniu)
+     -----------------------------------------------------------------------------
+     4. Dodaj uprawnienia w bazie (jak na nagraniu)
 
    - Takie rozłożenie powinno sprawić że kod będzie w pełni działać a urządzenie będzie mogło komunikować się ze stroną.
 
