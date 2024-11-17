@@ -105,9 +105,13 @@ Projekt korzysta z następujących bibliotek i zasobów:
 6. **WiFi (Urządzenie)**
    - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/WIFI(arduino).txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/WIFI(arduino).txt)
    - Dokumentacja: [https://www.arduino.cc/en/Reference/WiFi](https://www.arduino.cc/en/Reference/WiFi)
+     
 7. **Stepper (Urządzenie)**
    - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/stepper.txt)
    - Dokumentacja: [https://github.com/arduino-libraries/Stepper](https://github.com/arduino-libraries/Stepper)
+8. **Unvicorn**
+   - Licencja: [https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/uvicorn_license.txt](https://github.com/DKDIq/Inteligentny-Kosz/blob/main/licencje_uzytych_zasobow/uvicorn_license.txt)
+   - Strona: [https://www.uvicorn.org](https://www.uvicorn.org)
 
 ---
 
