@@ -1,4 +1,8 @@
 # Inteligentny Kosz na Śmieci
+
+## JAK POBRAC I WLACZYC NA WLASNYM KOMPUTERZE(FILMIK): 
+https://drive.google.com/file/d/1MEvjhgCLnwQQyvsaIB7S0fCEhRssuKKy/view?usp=sharing
+
 ## NAGRANIE DZIAŁANIA URZADZENIA I WYTLUMACZENIE KODU PROSZE OBEJRZEC PRZED OCENA: 
 https://drive.google.com/file/d/1gpm4vOQkSO0xb6vGZbL6EfsVQdOOYmZC/view?usp=sharing
 
