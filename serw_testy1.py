@@ -13,7 +13,6 @@ import torch.nn as nn
 from torchvision import transforms, models
 from PIL import Image
 
-class_char = ["0","1", "2", "3"]
 class_names = ["papier", "plastik", "szklo"]
 class_namess=["nie WIEM","papier", "plastik", "szklo"]
 baza=["miesz","pap","pl","szkl"]
@@ -90,7 +89,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             image_stream = BytesIO(image_data)
             predicted_class = predict_image(model, image_stream)
 
-            liczba=(class_char[class_namess.index(predicted_class)])
+            liczba=str(class_namess.index(predicted_class))
             conn.sendall(liczba.encode())
             try:
                 conn = pymysql.connect(
