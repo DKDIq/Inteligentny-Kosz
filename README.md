@@ -39,11 +39,11 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
 1. **Uruchomienie części serwerowej:**
    - Zainstaluj wymagane biblioteki Python:
      ```bash
-     pip install fastapi torch torchvision pillow pymysql
+     pip install fastapi torch torchvision pillow pymysql uvicorn
      ```
    - Uruchom serwer FastAPI:
      ```bash
-     uvicorn main:app --reload
+     uvicorn main:app --port 890
      ```
 
 2. **Programowanie ESP32:**
