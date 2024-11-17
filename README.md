@@ -3,7 +3,7 @@
 ## JAK POBRAC I WLACZYC NA WLASNYM KOMPUTERZE(FILMIK): 
 https://drive.google.com/file/d/1MEvjhgCLnwQQyvsaIB7S0fCEhRssuKKy/view?usp=sharing
 
-## NAGRANIE DZIAŁANIA URZADZENIA I WYTLUMACZENIE KODU PROSZE OBEJRZEC PRZED OCENA: 
+## NAGRANIE DZIAŁANIA URZADZENIA: 
 [https://drive.google.com/file/d/1gpm4vOQkSO0xb6vGZbL6EfsVQdOOYmZC/view?usp=sharing](https://drive.google.com/file/d/1vBlsztDTBdHb-pkFmPeYEQLg4gLNYJiq/view?usp=sharing)
 
 ## Opis projektu
