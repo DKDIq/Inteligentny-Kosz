@@ -61,18 +61,11 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
    - W celu przechowywania danych użytkowników i raportów o segregacji, należy skonfigurować bazę danych MySQL za pomocą XAMPP.
    - Skorzystaj z **phpMyAdmin** do stworzenia bazy danych i odpowiednich tabel:
      1. Utwórz bazę danych, np. `kosz`.
-     2. Utwórz tabelę dla użytkowników, np. `uzy`, z kolumnami:
-        - `id` 
-        - `nick`
-        - `haslo`
-        - `pl`
-        - `szkl`
-        - `miesz` 
-        - `pap`
-        - `pl1`
-        - `szkl1`
-        - `miesz1`
-        - `pap1`
+     2. Utwórz tabelę dla użytkowników uzywajac:
+        ```bash
+     CREATE TABLE `kosz`.`uzy` (`id` INT NOT NULL , `nick` TEXT NOT NULL , `haslo` TEXT NOT NULL , `cookie` TEXT NOT NULL , `pl` INT NOT NULL DEFAULT '0' , `szkl` INT NOT NULL DEFAULT '0' , `miesz` INT NOT NULL DEFAULT '0' , `pap` INT NOT NULL DEFAULT '0' , `pl1` INT NOT NULL DEFAULT '0' , `szkl1` INT NOT NULL DEFAULT '0' , `miesz1` INT NOT NULL DEFAULT '0' , `pap1` INT NOT NULL DEFAULT '0' ) ENGINE = InnoDB;
+     ```
+     3. Dodaj uprawnienia w bazie (jak na nagraniu)
 
    - Takie rozłożenie powinno sprawić że kod będzie w pełni działać a urządzenie będzie mogło komunikować się ze stroną.
 
