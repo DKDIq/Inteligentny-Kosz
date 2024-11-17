@@ -53,7 +53,7 @@ Inteligentny kosz na śmieci to projekt, który automatyzuje proces segregacji o
    - Załaduj kod na urządzenie.
 
 3. **Testowanie prototypu:**
-   - Ustaw własny model AI do wykrywania różnych materiałów (np. `model.pth`), nie mogę udostępnic mojego ponieważ github nie pozwala na tak duże pliki (i tak nie jest on nie omylny i przez brak czasu niedouczony jednak jesli nie ma innego zamiennika tu macie link do modelu tak jak mowie nie jest on nieomylny ale mozna od niego zaczac https://drive.google.com/file/d/1INj60a8Ra7PJqbf4vCdDyUh_yZyUTrlx/view?usp=sharing).
+   - Ustaw własny model AI do wykrywania różnych materiałów (`model.pth`), moj nie jest idealny jednak w razie potrzeby znajduje sie tu (nie da sie tak duzych plikow na githuba dodac) https://drive.google.com/file/d/1INj60a8Ra7PJqbf4vCdDyUh_yZyUTrlx/view?usp=sharing).
    - Połącz ESP32 z serwerem za pomocą sieci WiFi.
    - Użyj interfejsu WWW do rejestracji kosza i monitorowania danych.
 
