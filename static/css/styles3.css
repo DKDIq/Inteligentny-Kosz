@@ -133,3 +133,86 @@ h2 {
         font-size: 1.1rem;
     }
 }
+.waste-calculator {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.waste-calculator h3 {
+    font-size: 2rem;
+    color: #ff7043;
+    margin-bottom: 20px;
+}
+
+.waste-calculator p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.waste-calculator select, .waste-calculator button {
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.waste-calculator button {
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.waste-calculator button:hover {
+    background-color: #ff5722;
+}
+
+.result {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.eco-impact {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.eco-impact h3 {
+    font-size: 2rem;
+    color: #ff7043;
+    margin-bottom: 20px;
+}
+
+.eco-impact p {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.eco-impact button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.eco-impact button:hover {
+    background-color: #ff5722;
+}
