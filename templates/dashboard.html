@@ -30,7 +30,73 @@
         {% endfor %}
     </div>
     </div>
+<div class="eco-impact">
+    <h3>Twoje ekologiczne osiągnięcia</h3>
+    <p id="eco-summary"></p>
+    <button onclick="calculateEcoImpact()">Sprawdź, ile zaoszczędziłeś dla planety!</button>
+</div>
 
+<div class="waste-calculator">
+    <h3>Kalkulator ekologiczny</h3>
+    <p>Wybierz rodzaj odpadu, aby zobaczyć jego wpływ na planetę:</p>
+    <select id="waste-type">
+        <option value="plastic">Plastikowa butelka</option>
+        <option value="paper">Kartka papieru</option>
+        <option value="metal">Puszka aluminiowa</option>
+        <option value="glass">Szklana butelka</option>
+    </select>
+    <button onclick="calculateImpact()">Oblicz korzyść</button>
+    <p id="result" class="result"></p>
+</div>
 
 </body>
 </html>
+<script>
+function calculateImpact() {
+    const wasteType = document.getElementById("waste-type").value;
+    const resultElement = document.getElementById("result");
+
+    const impactData = {
+        plastic: "zaoszczędzasz 0.25 kg CO2 i zmniejszasz ilość odpadów plastikowych, które rozkładają się przez 450 lat!",
+        paper: "zaoszczędzasz 0.10 kg CO2 i przyczyniasz się do ochrony lasów.",
+        metal: "oszczędzasz 0.50 kg CO2 i zmniejszasz zużycie energii potrzebnej do wydobycia aluminium.",
+        glass: "oszczędzasz 0.20 kg CO2 i zmniejszasz zużycie zasobów naturalnych."
+    };
+
+    resultElement.textContent = `Wyrzucając ten odpad, ${impactData[wasteType]}`;
+}
+</script>
+<script>
+function calculateEcoImpact() {
+
+    const categories = [
+        { name: "Plastik", count: {{ data.categories[0].count }} },
+        { name: "Papier", count: {{ data.categories[1].count }} },
+        { name: "Metal", count: {{ data.categories[2].count }} },
+        { name: "Szkło", count: {{ data.categories[3].count }} },
+    ];
+
+  
+    const impactFactors = {
+        Plastik: 0.25, 
+        Papier: 0.10,
+        Metal: 0.50,
+        Szkło: 0.20
+    };
+
+    let totalCO2Saved = 0;
+    let impactMessage = "Dzięki Tobie planeta zaoszczędziła:<br>";
+
+
+    categories.forEach(category => {
+        const categoryImpact = (category.count * impactFactors[category.name]).toFixed(2);
+        totalCO2Saved += parseFloat(categoryImpact);
+        impactMessage += `${category.count} sztuk ${category.name.toLowerCase()} – ${categoryImpact} kg CO2<br>`;
+    });
+
+    impactMessage += `<br><strong>Łącznie: ${totalCO2Saved.toFixed(2)} kg CO2!TO JEDYNIE DANE OPIERAJACE SIE NA SZTUKACH nie wadze niestety brak mi odpowiedznich czesci</strong>`;
+
+
+    document.getElementById("eco-summary").innerHTML = impactMessage;
+}
+</script>
