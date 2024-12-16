@@ -114,7 +114,6 @@ Projekt korzysta z następujących bibliotek i zasobów:
 
 ## Uwagi dotyczące licencji
 - Projekt korzysta z powyższych bibliotek w ich **oryginalnej, niezmodyfikowanej formie**.
-- Jeśli dystrybuujesz swój projekt, pamiętaj, aby uwzględnić licencje wymienionych bibliotek w dokumentacji.
 
 ---
 
